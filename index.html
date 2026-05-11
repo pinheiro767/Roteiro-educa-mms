@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MS Anatomia" />
+  <title>Membro Superior — Anatomia Aplicada à Educação Física</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <section class="hero-content">
+      <span class="badge">PWA • Anatomia Humana • Educação Física</span>
+      <h1>Membro Superior Aplicado ao Movimento</h1>
+      <p>
+        Aula prática imersiva para identificação anatômica, topografia, movimento,
+        casos clínicos, fotos da peça e respostas bloqueadas por senha.
+      </p>
+      <div class="hero-actions">
+        <a href="#roteiro" class="btn primary">Iniciar roteiro prático</a>
+        <a href="#fotos" class="btn ghost">Tirar ou anexar fotos</a>
+      </div>
+      <p class="teacher">Prof.ª Cláudia Regina Pinheiro Lopes</p>
+    </section>
+  </header>
+
+  <nav class="tabs">
+    <a href="#objetivos">Objetivos</a>
+    <a href="#estruturas">Estruturas</a>
+    <a href="#roteiro">Roteiro</a>
+    <a href="#casos">Casos</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#respostas">Respostas</a>
+  </nav>
+
+  <main>
+    <section id="objetivos" class="section">
+      <h2>Objetivos da aula</h2>
+      <div class="grid cards-3">
+        <article class="card">
+          <h3>Identificar</h3>
+          <p>Reconhecer estruturas ósseas, musculares, nervosas e topográficas do membro superior.</p>
+        </article>
+        <article class="card">
+          <h3>Relacionar</h3>
+          <p>Conectar anatomia com movimento, treino, esporte, lesão e função.</p>
+        </article>
+        <article class="card">
+          <h3>Aplicar</h3>
+          <p>Resolver casos clínicos ligados à prática da Educação Física.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="estruturas" class="section">
+      <div class="section-title">
+        <h2>Cards de identificação anatômica</h2>
+        <p>Os alunos devem localizar na peça, no esqueleto, no modelo ou no colega.</p>
+      </div>
+
+      <div class="filter-bar">
+        <input id="searchInput" type="search" placeholder="Buscar estrutura, nervo, músculo ou região..." />
+        <select id="categoryFilter">
+          <option value="todas">Todas as categorias</option>
+          <option value="Ossos e acidentes ósseos">Ossos e acidentes ósseos</option>
+          <option value="Ombro e cintura escapular">Ombro e cintura escapular</option>
+          <option value="Braço">Braço</option>
+          <option value="Antebraço anterior">Antebraço anterior</option>
+          <option value="Antebraço posterior">Antebraço posterior</option>
+          <option value="Mão">Mão</option>
+          <option value="Nervos">Nervos</option>
+          <option value="Vasos e topografia">Vasos e topografia</option>
+        </select>
+      </div>
+
+      <div id="structureGrid" class="grid cards-2"></div>
+    </section>
+
+    <section id="roteiro" class="section">
+      <h2>Roteiro prático em estações</h2>
+      <div class="timeline">
+        <article class="step">
+          <span>1</span>
+          <div>
+            <h3>Estação óssea e topográfica</h3>
+            <p>Localizar clavícula, escápula, acrômio, processo coracoide, espinha da escápula, tubérculo maior, tubérculo menor, sulco intertubercular, epicôndilos, olécrano, rádio, ulna, carpos, metacarpos e falanges.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>2</span>
+          <div>
+            <h3>Estação do ombro</h3>
+            <p>Identificar deltoide, manguito rotador, peitoral maior, latíssimo do dorso, trapézio e serrátil anterior. Relacionar com abdução, rotação medial, rotação lateral, flexão e extensão do ombro.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>3</span>
+          <div>
+            <h3>Estação do braço</h3>
+            <p>Localizar bíceps braquial, cabeça longa, cabeça curta, coracobraquial, braquial e tríceps braquial com cabeça longa, lateral e medial.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>4</span>
+          <div>
+            <h3>Estação do antebraço</h3>
+            <p>Diferenciar compartimento anterior flexor/pronador e compartimento posterior extensor/supinador. Identificar tendões no punho.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>5</span>
+          <div>
+            <h3>Estação da mão</h3>
+            <p>Reconhecer região tenar, hipotênar, lumbricais, interósseos, aponeurose palmar, túnel do carpo e canal de Guyon.</p>
+          </div>
+        </article>
+        <article class="step">
+          <span>6</span>
+          <div>
+            <h3>Estação clínica</h3>
+            <p>Responder aos casos clínicos com estrutura lesionada, movimento afetado, músculo, nervo, topografia e aplicação no treino.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="casos" class="section">
+      <h2>Casos clínicos para grupos</h2>
+      <div id="caseGrid" class="grid cards-2"></div>
+    </section>
+
+    <section id="atividade" class="section">
+      <h2>Atividade avaliativa dos alunos</h2>
+      <div class="card activity">
+        <h3>Entrega prática</h3>
+        <p>Cada grupo deverá escolher 8 estruturas do roteiro, fotografar, nomear, explicar topografia, função, movimento relacionado e uma lesão possível.</p>
+        <ul>
+          <li>1 estrutura óssea ou acidente ósseo;</li>
+          <li>2 músculos do ombro;</li>
+          <li>2 músculos do braço;</li>
+          <li>2 músculos do antebraço;</li>
+          <li>1 estrutura da mão ou nervo.</li>
+        </ul>
+        <textarea id="studentNotes" placeholder="Espaço para anotações do grupo..."></textarea>
+        <button class="btn primary" id="saveNotes">Salvar anotações neste aparelho</button>
+      </div>
+    </section>
+
+    <section id="fotos" class="section">
+      <h2>Fotos da peça anatômica</h2>
+      <p class="muted">Os alunos podem anexar ou tirar quantas fotos quiserem. As imagens ficam salvas somente neste aparelho/navegador.</p>
+      <div class="photo-actions">
+        <label class="btn primary file-btn">
+          Tirar foto / anexar imagens
+          <input id="photoInput" type="file" accept="image/*" capture="environment" multiple />
+        </label>
+        <button class="btn danger" id="clearPhotos">Apagar todas as fotos</button>
+      </div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section id="respostas" class="section locked-section">
+      <h2>Respostas da professora</h2>
+      <div id="lockBox" class="lock-box">
+        <p>Área bloqueada. A senha deve ser fornecida somente pela professora.</p>
+        <input id="passwordInput" type="password" placeholder="Digite a senha" />
+        <button class="btn primary" id="unlockBtn">Desbloquear respostas</button>
+        <p id="lockMessage" class="lock-message"></p>
+      </div>
+      <div id="answersBox" class="answers hidden"></div>
+    </section>
+  </main>
+
+  <button id="installBtn" class="install hidden">Instalar app</button>
+
+  <footer>
+    <p>Aplicativo PWA — Membro Superior aplicado à Educação Física</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
